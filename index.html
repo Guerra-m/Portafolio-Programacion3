@@ -4,56 +4,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>porfolio Guerra</title>
+  <title>Portafolio Martín Guerra</title>
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav>
+
+    <div class="logo-container">
       <a href="https://github.com/Guerra-m" target="_blank">
-    <img src="./assets/github-logo-transparent-background-free-png.webp" class="logoNav" alt="GitHub">
-  </a>
-      <ul>
+        <img src="./assets/github-logo-transparent-background-free-png.webp" class="logoNav" alt="GitHub">
+      </a>
+    </div>
+    <nav>
+
+      <ul id="menuList">
         <li><a href="#acerca-de">Acerca de</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+        <li class="modo-oscuro-movil">
+          <button id="modoOscuroBtnMovil">🌙</button>
+        </li>
 
+      </ul>
+      <button id="modoOscuroBtn" class="boton-oscuro">🌙</button>
+
+    </nav>
+    <button class="menu-toggle" id="menuToggle">☰</button>
   </header>
   <main>
     <!-- Sobre mi -->
     <section class="sobreMi" id="acerca-de">
       <h2>Martín Guerra</h2>
-      <p>Desarrollador backend con experiencia en Java y Spring Boot. Conozco bases de datos como MySQL y MongoDB, y actualmente amplio mis conocimientos en tecnologías frontend para avanzar hacia el desarrollo full stack. Me interesa el diseño limpio, el código mantenible y las buenas prácticas de desarrollo.</p>
+      <p>Desarrollador backend apasionado por construir aplicaciones eficientes y mantenibles con Java y Spring Boot.
+        Tengo experiencia trabajando con bases de datos como MySQL y MongoDB, y actualmente me capacito en tecnologías
+        frontend para convertirme en desarrollador full stack. Me enfoco en escribir código limpio, seguir buenas
+        prácticas y crear soluciones con una arquitectura sólida y escalable.</p>
     </section>
 
     <!-- Proyectos -->
 
     <section class="proyectos" id="proyectos">
       <h2>Proyectos</h2>
-      <article class="app">
+      <article class="app" id="proyecto-eog">
         <img src="./assets/eogLogo.ico" class="representacionImagen">
 
         <div class="texto">
           <h3>EOG - Clases</h3>
           <p>Aplicación desarrollada para la gestión de clases y pagos de alumnos.
-            Permite registrar asistencias, controlar pagos y organizar el calendario de clases.
-            Implementada con Java y Spring Boot, siguiendo una arquitectura MVC y conectada a base de datos.</p>
+            Permite registrar asistencias y controlar pagos.</p>
+          <div class="tecnologias">
+            <img src="./assets/backend/Java_Logo.svg" alt="Java" title="Java">
+            <img src="./assets/backend/logomysql.webp" alt="MySQL" title="NetBeans">
+          </div>
         </div>
+        <div class="capturas"></div>
       </article>
 
-      <article class="app">
+      <article class="app" id="proyecto-foodstore">
         <img src="./assets/logoFood.jpg" class="representacionImagen">
         <div class="texto">
           <h3>Food Store</h3>
           <p>Plataforma de comercio electrónico enfocada en la venta de alimentos.
             Incluye gestión de productos, carrito de compras y autenticación de usuarios.
-            Desarrollada con Spring Boot para el backend y tecnologías web como HTML, CSS, JavaScript y TypeScript para
-            el frontend.</p>
+          </p>
+          <div class="tecnologias">
+            <img src="./assets/springLogo.webp" alt="Spring Boot" title="Spring Boot">
+            <img src="./assets/frontend/htmlLogo.png" alt="HTML" title="HTML">
+            <img src="./assets/frontend/cssLogo.png" alt="CSS" title="CSS">
+            <img src="./assets/frontend/javascriptLogo.png" alt="JavaScript" title="JavaScript">
+            <img src="./assets/frontend/tsLogo.webp" alt="TypeScript" title="TypeScript">
+            <img src="./assets/backend/logomysql.webp" alt="MySQL">
+          </div>
         </div>
+        <div class="capturas"></div>
       </article>
     </section>
 
@@ -66,7 +91,7 @@
           <div class="logos">
             <img src="./assets/frontend/htmlLogo.png" alt="HTML">
             <img src="./assets/frontend/cssLogo.png" alt="CSS">
-            <img class="imgJs"src="./assets/frontend/javaScriptLogo.png" alt="JavaScript">
+            <img class="imgJs" src="./assets/frontend/javaScriptLogo.png" alt="JavaScript">
             <img src="./assets/frontend/tsLogo.webp" alt="TypeScript">
           </div>
         </article>
@@ -77,13 +102,13 @@
             <img src="./assets/backend/Java_Logo.svg" alt="Java">
             <img src="./assets/backend/logomysql.webp" alt="MySQL">
             <img src="./assets/backend/logoMongo.png" alt="MongoDB">
-            <img src="./assets/backend/PythonLogo.png"alt="python">
+            <img src="./assets/backend/PythonLogo.png" alt="python">
             <img src="./assets/backend/Node.jsLogo.png" alt="Node.js">
           </div>
         </article>
 
         <article class="habilidades">
-          <h3>Tools y Technologies</h3>
+          <h3>Herramientas y Tecnologías</h3>
           <div class="logos">
             <img src="./assets/tools/vscodeLogo.webp" alt="VS Code">
             <img src="./assets/tools/GitHub-Logo.png" alt="GitHub">
@@ -94,39 +119,43 @@
       </div>
     </section>
   </main>
-<footer id="contacto">
-  <div class="footer-contenido">
-    <h5>Contactame</h5>
+  <footer id="contacto">
+    <div class="footer-contenido">
+      <h5>Contáctame</h5>
 
-    <div class="iconos">
-      <div class="icono">
-        <a href="https://github.com/tuUsuario" target="_blank">
-          <img src="./assets/github.png" alt="GitHub">
-        </a>
-        <span>GitHub</span>
-      </div>
+      <div class="iconos">
+        <div class="icono">
+          <a href="https://github.com/Guerra-m" target="_blank">
+            <img src="./assets/github.png" alt="GitHub">
+          </a>
+          <h4><span>GitHub</span></h4>
 
-      <div class="icono">
-        <a href="https://wa.me/5492615444635" target="_blank">
-          <img src="./assets/whatsapp-logo_icon-icons.com_57054.png" alt="WhatsApp">
-        </a>
-        <span>+54 9 261 5444635</span>
-      </div>
+        </div>
 
-      <div class="icono">
-        <a href="mailto:vernonguerra27@gmail.com">
-          <img src="./assets/mail_email_message_electronic_online_web_icon-icons.com_59986.png" alt="Email">
-        </a>
-        <span>vernonguerra27@gmail.com</span>
+        <div class="icono">
+          <a href="https://wa.me/5492615444635" target="_blank">
+            <img src="./assets/whatsapp-logo_icon-icons.com_57054.png" alt="WhatsApp">
+          </a>
+          <h4>
+            <span>+54 9 261 5444635</span>
+          </h4>
+        </div>
+
+        <div class="icono">
+          <a href="mailto:vernonguerra27@gmail.com">
+            <img src="./assets/mail_email_message_electronic_online_web_icon-icons.com_59986.png" alt="Email">
+          </a>
+          <h4>
+            <span>vernonguerra27@gmail.com</span>
+          </h4>
+        </div>
       </div>
     </div>
-  </div>
 
-  <p class="footer-derechos">2025 Guerra - Todos los derechos reservados</p>
-</footer>
+    <p class="footer-derechos">2025 Guerra - Todos los derechos reservados</p>
+  </footer>
 
-
-
+  <script src="./js/main.js"></script>
 
 </body>
 
