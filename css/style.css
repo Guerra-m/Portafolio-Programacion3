@@ -195,10 +195,10 @@ nav ul li a:hover {
 
 .habilidades_herramientas h2 {
   font-size: 2rem;
-  margin: 0 auto 20px auto; /* centra el título */
+  margin: 0 auto 20px auto; 
   border-bottom: 2px solid #0b297e;
   padding-bottom: 10px;
-  display: inline-block; /* hace que el subrayado solo cubra el texto */
+  display: inline-block; 
 }
 
 
