@@ -580,6 +580,7 @@ body.dark-mode .habilidades:hover {
     color: var(--color-texto);
     font-size: 1.5rem;
     cursor: pointer;
+    margin-right: 2rem;
   }
 
   .modo-oscuro-movil button:hover {
